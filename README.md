@@ -186,7 +186,7 @@ profit for 10000 runs of 1000 games is close to this, but its standard
 deviation is over 11000, or 23 times the mean."
 
 
-Alternating St. Petersburg
+Alternating St. Petersburg:
 
     python testGames.py astp
 
