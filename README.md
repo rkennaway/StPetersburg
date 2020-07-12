@@ -3,7 +3,8 @@
 This is a simulation of some truncated versions of infinite games
 similar to the classical St. Petersburg game. The simulation is
 referenced in the paper "Unbounded utility and axiomatic foundations"
-by Richard Kennaway, 2020.
+by Richard Kennaway, 2020. If the paper has not been published yet, you
+can ask me for a copy.
 
 All of the games consist of tossing a coin until it first comes up heads,
 and making a payment to the player depending on the number of coin-tosses.
