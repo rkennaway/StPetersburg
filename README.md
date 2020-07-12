@@ -9,13 +9,14 @@ can ask me for a copy.
 All of the games consist of tossing a coin until it first comes up heads,
 and making a payment to the player depending on the number of coin-tosses.
 
-To run the program, at a Unix command line or in the OSX Terminal, go to
-the directory containing the file testGames.py and type:
+To run the program, at a Unix command line or in the OSX Terminal, or
+whatever the equivalent is in Windows, go to the directory containing the
+file testGames.py and type:
 
     python testGames.py GAME ...
 
-GAME is an abbreviation for the game to be simulated (see below for a
-list of available games).
+GAME is an abbreviation for the game to be simulated. See below for a
+list of available games.
 
 The remaining arguments are all optional. Their default values are the
 same as those used in the paper, so for a quick check on the results
@@ -58,30 +59,6 @@ profit. When the expectation value is zero, no fee is paid.
 The default value is 0.97.
 
 
--ownrand
-
-If this option is present, then this procedure will use the accompanying
-implementation of the Mersenne Twister random number generator. If absent,
-it will use the built-in numpy.random.rand(), which is nearly 20 times
-faster.
-
-The reason for having the explicit implementation is to make it possible
-to be sure that if running in some future version of Python, which might
-use a different default random number generators, bit-for-bit identical
-results can still be obtained.
-
-
--seed SEED
-
-This is the seed for the random number generator. Specifying this enables
-exact reproducibility of results.
-
-By default the generator is seeded from the system clock.
-
-The seed value for the runs described in the paper is 1234 (with the
--ownrand option).
-
-
 -filename FILENAME
 
 This is the name of a file to send all text output to.
@@ -95,6 +72,29 @@ If this option is present, a plot of up to 100 runs will be made, showing
 the player's winnings over time. This option requires that your Python
 installation includes the matplotlib module, available from
 https://matplotlib.org.
+
+
+-seed SEED
+
+This is the seed for the random number generator. Specifying this enables
+exact reproducibility of results.
+
+By default the generator is seeded from the system clock, and so the
+program will give different results every time it is run, but broadly of
+the same nature.
+
+
+-ownrand
+
+If this option is present, then this procedure will use the random number
+defined in the accomnpaying file MersenneTwister.py. If the option is absent,
+it will use the built-in numpy.random.rand(), which is nearly 20 times faster.
+
+The reason for including this implementation is to make it possible to be
+sure that in any future version of Python, which might use a different default
+generator, bit-for-bit identical results can still be obtained. If porting this
+program to a different language (it was originally written in Matlab) it also
+allows a check on the correctness of the ported version.
 
 
 All options can be truncated to a unique prefix, e.g. -t 10 -o -fe 0.9.
