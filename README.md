@@ -116,17 +116,17 @@ For example:
 
 The available games are:
 
-  'stp'      St. Petersburg
-  'astp'     Alternating St. Petersburg
-  'pastp'    Permuted Alternating St. Petersburg
-  'cstp'     Convergent St. Petersburg
-  'pasa'     Pasadena
-  'ppasa'    Permuted Pasadena
-  'alta'     Altadena
-  'palta'    Permuted Altadena
-  'aix'      Aix-to-Ghent
-  'paix'     Permuted Aix-to-Ghent
-  'sudd'     Sudden Death
+    'stp'      St. Petersburg  
+    'astp'     Alternating St. Petersburg  
+    'pastp'    Permuted Alternating St. Petersburg  
+    'cstp'     Convergent St. Petersburg  
+    'pasa'     Pasadena  
+    'ppasa'    Permuted Pasadena  
+    'alta'     Altadena  
+    'palta'    Permuted Altadena  
+    'aix'      Aix-to-Ghent  
+    'paix'     Permuted Aix-to-Ghent  
+    'sudd'     Sudden Death
 
 The "alternating" version of a game switches the sign of the payout
 for each even-numbered length of game.
