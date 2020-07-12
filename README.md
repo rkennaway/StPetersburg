@@ -151,9 +151,9 @@ Aix-to-Ghent is like Alternating St. Petersburg, but the expected
 values of the prizes grow exponentially, and so the prizes grow even
 faster: as 2^(2k) with alternating sign.
 
-In the game of Sudden Death, a coin is tossed up to n times. If it ever
-comes up tails, the game ends with no payout. If it comes up heads
-every time, the player wins 2^n.
+The game of Sudden Death is an exception to the general pattern. A coin
+is tossed up to n times. If it ever comes up tails, the game ends with no
+payout. If it comes up heads every time, the player wins 2^n.
 
 All payoffs and all values reported are stated from the point of view
 of player 1, i.e. positive numbers are a gain for player 1, a loss for
