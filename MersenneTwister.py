@@ -5,10 +5,10 @@ Based on the pseudocode in https://en.wikipedia.org/wiki/Mersenne_Twister. Gener
 
 Yaşar Arabacı <yasar11732 et gmail nokta com>
 
-Modifications by Richard Kennaway 2020 July.
+Modifications by [redacted] 2020 July.
 1. Compatibility with Python 3:
     print requires parentheses on its arguments.
-    xrange() is replaced by range()).
+    xrange() is replaced by range().
 2. Generates array of random values of any shape.
 3. Renamed extract_number to rand_uint32.
 4. New procedure rand_uint64 to generate 64-bit random integers.
@@ -21,7 +21,7 @@ import numpy as np
 twisterLength = 624
 seed = 0;
 
-# Create a length twisterLength list to store the state of the generator
+# Create a list to store the state of the generator
 MT = [0 for i in range(twisterLength)]
 index = 0
 
@@ -59,11 +59,6 @@ def initialize_generator(s):
         MT[i] = x12 & bitmask_1
     index = 0;
         
-
-def printstate():
-    for i in range(1,twisterLength):
-        print( i+1, MT[i] );
-    print( "bitmasks", bitmask_1, bitmask_2, bitmask_3 );
 
 def rand_uint32( nn ):
     """

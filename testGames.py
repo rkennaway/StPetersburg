@@ -1,3 +1,6 @@
+# See the accompanying file testGames.txt for documentation.
+# Written by [redacted], July 2020.
+
 import numpy as np
 from scipy.stats import kurtosis
 from scipy.stats import skew
@@ -56,6 +59,8 @@ def testGames( game,
     expect = np.sum(eprizes);
     stddev = np.sqrt( np.sum( (prizes[0:(-1)]**2)*(probs*(1-probs)) ) );
     fee = expect * feeratio;
+    
+    
     
     if ownrand:
         MT.initialize_generator(seed)
@@ -127,12 +132,28 @@ def testGames( game,
     
     np.seterr(divide='ignore')  # We expect to sometimes be dividing by zero.
     
-    f.write( "{:s} truncated to {:d} turns, played in runs of {:d} games, "
-             "{:d} times over.\n".format(
+
+    f.write( "The game {:s} is truncated to {:d} turns,\nand played in runs of "
+             "{:d} games, {:d} times over.\n".format(
         gn, trunc, runlength, numruns ) )
+
+    f.write( 'Expectation value {:f}, fee to play {:f}, std.dev. {:g}\n'.format( expect, fee, stddev ) );
+
+    if expect != 0:
+        # Calculate (roughly) the number N of games that must be played before the
+        # profiting player has a 95% chance of being in profit. This is estimated
+        # as the point where the expectation of the series, (expect-fee)*N, is at
+        # least equal to twice the standard deviation, 2*stddev*sqrt(N).
+        
+        numstdclear = 2; # Number of standard deviations of drift required.
+        gamesToClear = np.ceil( (stddev/(numstdclear * (expect-fee)))**2 )
+        player = 1 if expect>0 else 2
+        f.write( '{:.0f} games must be played for player {:d} to have a 95% chance of '
+                 'being in profit.\n'.format(gamesToClear,player) );
+    
     f.write( '{:d} games were terminated by truncation.\n'.format(truncations) );
     f.write( 'Expectation value {:f}, fee to play {:f}, std.dev. {:g}\n'.format( expect, fee, stddev ) );
-    f.write( 'Long-term number of games {:g}.\n'.format( stddev/(expect-fee) ) );
+#    f.write( 'Long-term number of games {:g}.\n'.format( stddev/(expect-fee) ) );
     f.write( 'First downside for player 1:\n    median: {:f}\n      mean: {:f}\n       max: {:f}\n  skewness: {:f}\n'.format(
         np.median(firstdownside1),
         np.mean(firstdownside1),

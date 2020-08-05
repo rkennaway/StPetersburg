@@ -3,8 +3,7 @@
 This is a simulation of some truncated versions of infinite games
 similar to the classical St. Petersburg game. The simulation is
 referenced in the paper "Unbounded utility and axiomatic foundations"
-by Richard Kennaway, 2020. If the paper has not been published yet, you
-can ask me for a copy.
+currently (July 2020) under submission.
 
 All of the games consist of tossing a coin until it first comes up heads,
 and making a payment to the player depending on the number of coin-tosses.
@@ -17,6 +16,8 @@ file testGames.py and type:
 
 GAME is an abbreviation for the game to be simulated. See below for a
 list of available games.
+
+The program is written for Python 3 and will not work with Python 2.
 
 The remaining arguments are all optional. Their default values are the
 same as those used in the paper, so for a quick check on the results
@@ -69,9 +70,7 @@ By default, output is written to the terminal.
 -plot
 
 If this option is present, a plot of up to 100 runs will be made, showing
-the player's winnings over time. This option requires that your Python
-installation includes the matplotlib module, available from
-https://matplotlib.org.
+the player's winnings over time.
 
 
 -seed SEED
@@ -100,7 +99,7 @@ allows a check on the correctness of the ported version.
 All options can be truncated to a unique prefix, e.g. -t 10 -o -fe 0.9.
 
 
-testGames.py can also be run from a Python command line. In this case, you
+testGames.py can also be run from a Python 3 command line. In this case, you
 should give the commands:
 
     import testGames as tg
@@ -148,8 +147,8 @@ expected values therefore decrease as 1/k, with alternating sign.
 Altadena is like Pasadena, but with 1 added to each prize.
 
 Aix-to-Ghent is like Alternating St. Petersburg, but the expected
-values of the prizes grow exponentially, and so the prizes grow even
-faster: as 2^(2k) with alternating sign.
+values of the prizes grow as 2^k, and so the prizes grow even faster:
+as 2^(2k) with alternating sign.
 
 The game of Sudden Death is an exception to the general pattern. A coin
 is tossed up to n times. If it ever comes up tails, the game ends with no
@@ -165,10 +164,16 @@ and 10000 runs. While 3% expected profit per game may seem a small edge
 for the player, it is similar to that of the casino in the game of
 roulette (1/37), and that size of edge keeps the casino in business.
 
-The result of running the program is to print out some statistics, and
-if requested, to plot a sample of 100 of the runs of games, showing the
-player's winnings at each point in time. These plots give a more intuitive
-idea of the behaviour of the games than the summary statistics.
+The result of running the program is to print out some statistics. Some of
+these are calculated from the mathematical definition of the game, and some
+from the results of simulating it. If requested, the program will plot a
+sample of 100 of the runs of games, showing the player's winnings at each
+point in time. These plots give a more intuitive idea of the behaviour of
+the games than the summary statistics.
+
+To obtain these plots you must have the matplotlib module installed. The
+program will tell you if it is not. If it is absent from your Python
+installation, it can be obtained from https://matplotlib.org.
 
 
 Not all of these games are discussed in the paper. For those that are,
