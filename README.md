@@ -23,7 +23,7 @@ in the paper can be made with the command:
 
     python alltests.py
     
-This will run all of the examples from section 7 of the paper and several
+This will run all of the examples from section 3 of the paper and several
 more besides, and write results to the file testresults.txt. As the tests
 use a fixed seed for the random number generator, the results should be
 identical to the results already provided in the subdirectory TestResults.
