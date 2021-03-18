@@ -2,8 +2,9 @@
  
 This is a simulation of some truncated versions of infinite games
 similar to the classical St. Petersburg game. The simulation is
-referenced in the paper "Unbounded utility and axiomatic foundations"
-currently (September 2020) under submission.
+referenced in the unpublished paper "Unbounded utility and axiomatic
+foundations" (October 2020), readable at
+https://doi.org/10.13140/RG.2.2.23334.24645.
 
 The paper discusses only St. Petersberg, Pasadena, and Convergent St.
 Petersberg, which are enough for the points it makes, but this program
@@ -14,7 +15,7 @@ heads, and making a payment to the player depending on the number of
 coin-tosses.
 
 The program is written in Python (version 3) and must be run from a command
-line. On Unix, the Unix command line, and on OSX the Terminal command line.
+line. On Unix, the Unix command line, and on OSX, the Terminal command line.
 I am not familiar with Windows.
 
 A quick check of the functioning of the program and the examples discussed
@@ -318,9 +319,9 @@ of over 1 million units.
 It is interesting to plot the player's winnings over time for Permuted
 Pasadena. The player seems to be relentlessly losing money, despite the
 positive expectation. This is because 1000 games is not enough for the
-largest payoffs to be sure of happening. The player's largest payoff
-only happens once in 65536 games, and even their smallest positive
-payoff happens only one time in 512.
+largest payoffs to be sure of happening at all. The player's largest
+payoff only happens once in 65536 games, and even their smallest
+positive payoff happens only one time in 512.
 
 
 The fat-tailed versions of the games are not discussed in the paper.
