@@ -1,0 +1,232 @@
+St. Petersburg
+The game is truncated to 16 turns.
+Truncation probability is 1 in 65536.
+Expectation value 16.000000, fee to play 15.520000.
+Std. dev. 362.014, skewness 120.572, kurtosis 18708.4.
+10000 runs of 1000 games are played.
+Expected payoff per run 480.000000.
+Random numbers were generated with a custom generator.
+The seed was 1234.
+
+Results:
+
+134 games were terminated by truncation.
+
+First downside for player 1:
+    median: -551.800000
+      mean: -2043.277184
+     worst: -9064.000000
+   std dev: 2511.334884
+  skewness: -0.941217
+  kurtosis: 2.370939
+
+Run-length downside for player 1:
+    median: -4209.000000
+      mean: -4061.255368
+     worst: -9062.000000
+   std dev: 2044.453448
+  skewness: 0.126164
+  kurtosis: 2.105506
+
+First downside for player 2:
+    median: 0.000000
+      mean: 25.605424
+     worst: 0.000000
+   std dev: 690.678987
+  skewness: 51.312747
+  kurtosis: 3051.822311
+
+Run-length downside for player 2:
+    median: 482.760000
+      mean: 4473.280816
+     worst: -13.520000
+   std dev: 10757.049747
+  skewness: 4.464660
+  kurtosis: 28.358007
+
+Fraction of runs in profit: 0.289000
+Total profit over all runs: 4121009.999999
+Profit per run:
+      mean: 412.101000
+   std dev: 11575.546030
+  std/mean: 28.089100
+  skewness: 3.950634
+  kurtosis: 23.783953
+Mean payoff per game, excluding fee 15.932101
+
+
+
+Alternating St. Petersburg
+The game is truncated to 16 turns.
+Truncation probability is 1 in 65536.
+Expectation value 0.000000, fee to play 0.000000.
+Std. dev. 362.014, skewness -72.4227, kurtosis 18729.7.
+10000 runs of 1000 games are played.
+Expected payoff per run 0.000000.
+Random numbers were generated with a custom generator.
+The seed was 1234.
+
+Results:
+
+134 games were terminated by truncation.
+
+First downside for player 1:
+    median: 0.000000
+      mean: -85.959000
+     worst: -65594.000000
+   std dev: 1132.301757
+  skewness: -32.837049
+  kurtosis: 1466.343630
+
+Run-length downside for player 1:
+    median: -923.000000
+      mean: -3430.745400
+     worst: -135608.000000
+   std dev: 9100.605649
+  skewness: -5.873485
+  kurtosis: 43.242388
+
+First downside for player 2:
+    median: 2.000000
+      mean: 264.935800
+     worst: 0.000000
+   std dev: 1893.783693
+  skewness: 15.287786
+  kurtosis: 288.676185
+
+Run-length downside for player 2:
+    median: 1466.000000
+      mean: 3412.282000
+     worst: -3978.000000
+   std dev: 6252.741082
+  skewness: 4.111156
+  kurtosis: 22.371896
+
+Fraction of runs in profit: 0.568500
+Total profit over all runs: -196430.000000
+Profit per run:
+      mean: -19.643000
+   std dev: 11429.777563
+  std/mean: 581.875353
+  skewness: -2.407551
+  kurtosis: 21.929255
+Mean payoff per game, excluding fee -0.019643
+
+
+
+Permuted Pasadena
+The game is truncated to 16 turns.
+Truncation probability is 1 in 65536.
+Expectation value 0.662872, fee to play 0.642986.
+Std. dev. 264.721, skewness 233.787, kurtosis 57404.8.
+10000 runs of 1000 games are played.
+Expected payoff per run 19.886156.
+Random numbers were generated with a custom generator.
+The seed was 1234.
+
+Results:
+
+134 games were terminated by truncation.
+
+First downside for player 1:
+    median: -1628.021459
+      mean: -1310.588588
+     worst: -2148.319028
+   std dev: 684.320235
+  skewness: 0.894760
+  kurtosis: 2.220109
+
+Run-length downside for player 1:
+    median: -1673.634646
+      mean: -1515.721969
+     worst: -2148.319028
+   std dev: 454.722657
+  skewness: 1.338507
+  kurtosis: 4.108358
+
+First downside for player 2:
+    median: 0.000000
+      mean: 0.363531
+     worst: 0.000000
+   std dev: 9.704977
+  skewness: 40.000495
+  kurtosis: 1833.797739
+
+Run-length downside for player 2:
+    median: -1.642986
+      mean: 1561.242356
+     worst: -16.642986
+   std dev: 8455.361034
+  skewness: 7.501270
+  kurtosis: 62.384392
+
+Fraction of runs in profit: 0.111500
+Total profit over all runs: 455552.240981
+Profit per run:
+      mean: 45.555224
+   std dev: 8595.632349
+  std/mean: 188.685985
+  skewness: 7.384004
+  kurtosis: 60.960190
+Mean payoff per game, excluding fee 0.688541
+
+
+
+Convergent St. Petersburg
+The game is truncated to 16 turns.
+Truncation probability is 1 in 65536.
+Expectation value 1.999725, fee to play 1.939734.
+Std. dev. 2.29222, skewness 0.492982, kurtosis 1.33853.
+10000 runs of 1000 games are played.
+Expected payoff per run 59.991760.
+Random numbers were generated with a custom generator.
+The seed was 1234.
+
+Results:
+
+134 games were terminated by truncation.
+
+First downside for player 1:
+    median: 0.000000
+      mean: -3.292024
+     worst: -107.396512
+   std dev: 6.466180
+  skewness: -4.359144
+  kurtosis: 31.807022
+
+Run-length downside for player 1:
+    median: -10.052872
+      mean: -14.223318
+     worst: -136.030044
+   std dev: 14.176779
+  skewness: -1.727321
+  kurtosis: 7.237145
+
+First downside for player 2:
+    median: 0.060266
+      mean: 7.291569
+     worst: 0.000000
+   std dev: 25.013518
+  skewness: 4.446397
+  kurtosis: 23.427841
+
+Run-length downside for player 2:
+    median: 71.253420
+      mean: 73.553074
+     worst: -0.939734
+   std dev: 38.313298
+  skewness: 0.412998
+  kurtosis: 2.901898
+
+Fraction of runs in profit: 0.908200
+Total profit over all runs: 591303.184570
+Profit per run:
+      mean: 59.130318
+   std dev: 44.851970
+  std/mean: 0.758527
+  skewness: 0.053326
+  kurtosis: 3.034027
+Mean payoff per game, excluding fee 1.998864
+
+
+
