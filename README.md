@@ -3,7 +3,7 @@
 This is a simulation of some truncated versions of infinite games
 similar to the classical St. Petersburg game. The simulation is
 referenced in my paper "Unbounded utility and axiomatic foundations"
-(October 2020), available at https://doi.org/10.13140/RG.2.2.23334.24645.
+(October 2020), available at https://doi.org/10.13140/RG.2.2.23334.24645/1.
 
 The paper discusses only St. Petersberg, Pasadena, and Convergent St.
 Petersberg, which are enough for the points it makes, but this program
