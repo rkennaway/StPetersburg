@@ -195,6 +195,7 @@ The available games are:
     'aix'      Aix-to-Ghent  
     'paix'     Permuted Aix-to-Ghent  
     'pdnk'     Podunk  
+    'smlv'     Smallville  
     'sudd'     Sudden Death
 
 The "alternating" version of a game switches the sign of the payout
